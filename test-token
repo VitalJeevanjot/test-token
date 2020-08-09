@@ -99,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contrac gov is ERC20Interface, Owned, SafeMath {
+contract gov is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -112,7 +112,7 @@ contrac gov is ERC20Interface, Owned, SafeMath {
     // ------------------------------------------------------------------------
     // Constructor
     // ------------------------------------------------------------------------
-    function gov() public {
+    constructor() public {
         symbol = "GOV";
         name = "Governance";
         decimals = 18;
